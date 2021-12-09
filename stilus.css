@@ -78,6 +78,11 @@ nav ul li a
     text-decoration: none;
 }
 
+nav ul li a:link
+{
+    color: white;
+}
+
 nav ul li a:visited
 {
     color: white;
@@ -250,5 +255,13 @@ section
     {
         /* grid-template-columns: 1fr; */
         grid-template-areas: "k";
+    }
+    .bal
+    {
+        margin: auto;
+    }
+    .jobb
+    {
+        margin: auto;
     }
 }
