@@ -13,11 +13,13 @@ main
                          "n n a a as as"
                          "f f f f f f";
     
-    max-width: 900px;
+    max-width: 1000px;
     width: 90%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 3px 3px 3px 3px #dadada;
+    /* padding: 5px; */
+    
 }
 
 body
@@ -97,6 +99,9 @@ article
 aside
 {
     grid-area: as;
+    border: 2px solid silver;
+    padding: 10px;
+    /* margin: 10px; */
 }
 
 aside h2
@@ -106,6 +111,7 @@ aside h2
 }
 aside p
 {
+    text-align: justify;
     margin: 5px;
 }
 
@@ -146,17 +152,25 @@ section
 .bal
 {
     /* grid-area: k; */
+    border: 1px solid silver;
+    background-color: white;
     float: left;
+    margin: 10px 10px 0px 10px;
+    padding: 10px 10px 40px 10px;
     -ms-transform: rotate(-8deg); /* IE 9 */
     -webkit-transform: rotate(-8deg); /* Safari */
     transform: rotate(-8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 10px 10px 10px silver;
 }
 
 .jobb
 {
     /* grid-area: k; */
+    border: 1px solid silver;
+    background-color: white;
     float: left;
+    margin: 1px 10px 0px 10px;
+    padding: 10px 10px 40px 10px;
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Safari */
     transform: rotate(7deg);
