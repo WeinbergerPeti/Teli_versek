@@ -2,22 +2,12 @@
 {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
-body
-{
-    background-image: url("kepek/hatter.jpg");
-    
-}
-
-/* main, header, nav, article, aside, footer
-{
-    border: 1px solid black;
-    
-} */
 
 main
 {
+    margin: auto;
     display: grid;
     grid-template-areas: "h h h h h h"  
                          "n n a a as as"
@@ -26,9 +16,23 @@ main
     max-width: 900px;
     width: 90%;
     background-color: white;
-    margin: 0 auto;
     border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px #dadada;
 }
+
+body
+{
+    background-image: url("kepek/hatter.jpg");
+    background-position: center;
+}
+
+/* main, header, nav, article, aside, footer
+{
+    border: 1px solid black;
+    
+} */
+
+
 
 header
 {
@@ -159,7 +163,30 @@ section
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-/* @media screen and(max-width: 600px)
+@media screen and (max-width:800px)
+{
+    main
+    {
+        grid-template-areas: "h h"
+                             "n n"
+                             "a as"
+                             "f f";
+    }
+
+    nav ul
+    {
+        /* grid-template-columns: 1fr; */
+        text-align: center;
+        max-width: 200px;
+    }
+    
+    section
+    {
+        grid-template-areas: "k k";
+    }
+}
+
+@media screen and (max-width:600px)
 {
     main
     {
@@ -180,5 +207,31 @@ section
     section
     {
         grid-template-columns: 1fr;
+       /*  grid-template-areas: "k"; */
     }
-} */
+}
+
+@media screen and (max-width:500px)
+{
+    main
+    {
+        grid-template-areas: "h"
+                             "n"
+                             "a"
+                             "as"
+                             "f";
+    }
+
+    nav ul
+    {
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+    }
+    
+    section
+    {
+        /* grid-template-columns: 1fr; */
+        grid-template-areas: "k";
+    }
+}
