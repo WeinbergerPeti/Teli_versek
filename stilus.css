@@ -76,6 +76,11 @@ nav ul li a:visited
     color: white;
 }
 
+nav ul li a:active
+{
+    color: white;
+}
+
 nav ul li a:hover
 {
     color: gold;
